@@ -1,0 +1,11 @@
+# Pinned to the versions used to train/serialize churn_model.joblib so the
+# pickle loads cleanly on Streamlit Community Cloud (Python 3.11 recommended).
+openai>=1.9,<2
+python-dotenv>=1.0
+joblib>=1.2
+
+# ML / data — must match the model artifact to avoid unpickling mismatches
+scikit-learn==1.3.1
+pandas==2.1.2
+numpy==1.23.5
+scipy>=1.10,<1.12
